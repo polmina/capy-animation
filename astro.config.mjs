@@ -9,8 +9,8 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   integrations: [react()],
   output: "static",
-  site: "https://capy-animation.github.io",
-  base: "/",
+  site: "https://polmina.github.io",
+  base: "/capy-animation",
   vite: {
     plugins: [tailwindcss()],
   },
