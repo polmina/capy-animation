@@ -10,7 +10,7 @@ export default defineConfig({
   integrations: [react()],
   output: "static",
   site: "https://polmina.github.io",
-  base: "/capy-animation",
+  base: "/capy-animation/",
   vite: {
     plugins: [tailwindcss()],
   },
