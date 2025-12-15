@@ -6,9 +6,7 @@ import meatIcon from "../assets/meat.svg?url";
 import pizzaIcon from "../assets/pizza.svg?url";
 import tomatoIcon from "../assets/tomato.svg?url";
 
-
 const SPEED = 50;
-
 
 interface Icon {
   src: HTMLImageElement;
@@ -79,8 +77,8 @@ export const Component = () => {
         ctx.drawImage(s.src, s.x, s.y, s.w, s.h);
       };
 
-      up.forEach(s => animate(s, "Up"));
-      down.forEach(s => animate(s, "Down"));
+      up.forEach((s) => animate(s, "Up"));
+      down.forEach((s) => animate(s, "Down"));
 
       rafRef.current = requestAnimationFrame(frame);
     };
@@ -107,7 +105,7 @@ export const Component = () => {
       const images = await loadImages();
       if (cancelled || !canvasRef.current) return;
 
-      const spriteSize = 80;
+      const spriteSize = 60;
 
       const imgsPerColumn =
         Math.ceil(canvas.clientHeight / spriteSize) + icons.length;
